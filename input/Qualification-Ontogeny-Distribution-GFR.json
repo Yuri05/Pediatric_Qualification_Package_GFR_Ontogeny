@@ -20,7 +20,7 @@
     "ObservedDataSets": [
         {
             "Id": "PK-Parameter",
-            "Path": "https://raw.githubusercontent.com/Incei/Pediatric_Qualification_Package_GFR_Ontogeny/master/input/PK-Parameters.csv",
+            "Path": "PK-Parameters.csv",
             "Type": "PKRatio"
         }
     ],
