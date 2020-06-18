@@ -3,15 +3,12 @@
 In this repository the electronic package for qualification of GFR ontogeny using in vivo probe substances are stored, including
 
 - Input files
-- Qualification Report
-  
+ 
 
 For the Qualification of the distribution and GFR elimination of compounds, the following probe substances were included:
 
 - Amikacin [[1](#reference)]
 - Vancomycin [[2](#reference)]
-- Pregabalin [[3](#reference)]
-
 
 Necessary software to execute the qualification workflow (see http://setup.open-systems-pharmacology.org for download links and instructions):
 - QualificationRunner
@@ -24,4 +21,3 @@ Necessary software to execute the qualification workflow (see http://setup.open-
 
 [2] [Vancomycin-Model, Whole-body PBPK model of Vancomycin.](https://github.com/Open-Systems-Pharmacology/Vancomycin-Model)
 
-[3] [Pregabalin-Model, Whole-body PBPK model of Pregabalin.](https://github.com/Open-Systems-Pharmacology/Pregabalin-Model)

@@ -7,14 +7,14 @@ Therefore, PBPK models of specific *in vivo* probe substances covering children 
 
 Using a developed and validated (adult) PBPK model for an *in vivo* probe substance, a pediatric PBPK model can be established for children by translating physiology, clearance processes (as parameterized in the adult model) and age-dependent protein binding including the variability therein.[[1](#reference)]
 
-The PBPK models are developed with clinical data of healthy adult subjects obtained from the literature, covering available dosing ranges for e.g. intravenous as well as oral administration, to capture both systemic clearance as well gut-wall metabolic clearance processes. For orally administered drugs, the same formulations that are used in children should ideally be included in the model for adults. Plasma concentrations following multiple-dose application, mass balance information and other clinical measurements need to be included for model development, if available. During model translation from adults to children for a specific substance, uncertainties in data-quality caused by impact of disease or the target study population, inaccurate in vitro assay-techniques regarding mass balance, as well as study differences may cause not being able to adequately predict the PK in children for all reported studies. 
+The PBPK models are developed with clinical data of healthy adult subjects obtained from the literature. Plasma concentrations following multiple-dose application, mass balance information and other clinical measurements need to be included for model development, if available. During model translation from adults to children for a specific substance, uncertainties in data-quality caused by impact of disease or the target study population, inaccurate in vitro assay-techniques regarding mass balance, as well as study differences may cause not being able to adequately predict the PK in children for all reported studies. 
 
 Prediction performance of the PBPK model for these probe substances in children are then shown by means of e.g. predicted versus observed clearance-ratio plots, of which the results support an adequate prediction of the ontogeny function for the application of PBPK model translation of adult PBPK to children.
 
 For qualification purpose, during the translation of adult PBPK to children the following assumptions and considerations were made: 
 
 - when translating an adult model to children, it was assumed that the metabolism and excretion pathways are qualitatively the same in children as in adults.
-- no further changes to input parameters other than those for the physiology and protein binding. All other parameters (e.g. lipophilicity, intestinal permeability, solubility) were kept unchanged. 
+- no further changes to input parameters other than those for the physiology and protein binding. All other parameters (e.g. lipophilicity) were kept unchanged. 
 
 ## Anthropometric and Physiological Information 
 
@@ -28,7 +28,6 @@ For the qualification of the GFR elimination of compounds, the following probe s
 
 - Amikacin [[4](#reference)]
 - Vancomycin [[5](#reference)]
-- Pregabalin [[6](#reference)]
 
 ### References
 
@@ -41,5 +40,3 @@ For the qualification of the GFR elimination of compounds, the following probe s
 [4] [Amikacin-Model, Whole-body PBPK model of Amikacin. https://github.com/Open-Systems-Pharmacology/Amikacin-Model](https://github.com/incei/Amikacin-Model)
 
 [5] [Vancomycin-Model, Whole-body PBPK model of Vancomycin. https://github.com/Open-Systems-Pharmacology/Amikacin-Model](https://github.com/incei/Vancomycin-Model)
-
-[6] [Pregabalin-Model, Whole-body PBPK model of Pregabalin. https://github.com/Open-Systems-Pharmacology/Pregabalin-Model](https://github.com/incei/Pregabalin-Model)
