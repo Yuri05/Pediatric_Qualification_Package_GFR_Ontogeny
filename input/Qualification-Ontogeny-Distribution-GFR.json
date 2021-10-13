@@ -746,90 +746,7 @@
                 ]
             }
         ],
-        "GOFMergedPlots": [
-            {
-                "Title": "Goodness-of-fit visual diagnostic plots of the vancomycin PBPK model performance: observed versus individually predicted plasma concentration versus time of all adult data.",
-                "SectionId": 44,
-                "PlotType": "predictedVsObserved",
-                "Groups": [
-                    {
-                        "Caption": "Vancomycin iv",
-                        "Symbol": "Circle",
-                        "OutputMappings": [
-                            {
-                                "Project": "Vancomycin-Pediatrics",
-                                "Simulation": "Boeckh 1988 Figure 1 0.5mg",
-                                "Output": "Organism|PeripheralVenousBlood|Vancomycin|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "Vancomycin.boeckh1988_fig1.0.5g TAD",
-                                "Color": "#000000"
-                            },
-                            {
-                                "Project": "Vancomycin-Pediatrics",
-                                "Simulation": "Boeckh1988_1g",
-                                "Output": "Organism|PeripheralVenousBlood|Vancomycin|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "Vancomycin.boeckh1988_fig1.1g TAD",
-                                "Color": "#000000"
-                            },
-                            {
-                                "Project": "Vancomycin-Pediatrics",
-                                "Simulation": "Healy1987_0.5gPer6h",
-                                "Output": "Organism|PeripheralVenousBlood|Vancomycin|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "Healy_1987_Figure1.500mgPer6h",
-                                "Color": "#000000"
-                            },
-                            {
-                                "Project": "Vancomycin-Pediatrics",
-                                "Simulation": "Healy1987_1gBID",
-                                "Output": "Organism|PeripheralVenousBlood|Vancomycin|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "Vancomycin.Healy_1987_Figure2",
-                                "Color": "#000000"
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "Title": "Goodness-of-fit visual diagnostic plots of the vancomycin PBPK model performance: weighted residuals versus time of all adult data.",
-                "SectionId": 44,
-                "PlotType": "residualsOverTime",
-                "Groups": [
-                    {
-                        "Caption": "Vancomycin iv",
-                        "Symbol": "Circle",
-                        "OutputMappings": [
-                            {
-                                "Project": "Vancomycin-Pediatrics",
-                                "Simulation": "Boeckh 1988 Figure 1 0.5mg",
-                                "Output": "Organism|PeripheralVenousBlood|Vancomycin|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "Vancomycin.boeckh1988_fig1.0.5g TAD",
-                                "Color": "#000000"
-                            },
-                            {
-                                "Project": "Vancomycin-Pediatrics",
-                                "Simulation": "Boeckh1988_1g",
-                                "Output": "Organism|PeripheralVenousBlood|Vancomycin|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "Vancomycin.boeckh1988_fig1.1g TAD",
-                                "Color": "#000000"
-                            },
-                            {
-                                "Project": "Vancomycin-Pediatrics",
-                                "Simulation": "Healy1987_0.5gPer6h",
-                                "Output": "Organism|PeripheralVenousBlood|Vancomycin|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "Healy_1987_Figure1.500mgPer6h",
-                                "Color": "#000000"
-                            },
-                            {
-                                "Project": "Vancomycin-Pediatrics",
-                                "Simulation": "Healy1987_1gBID",
-                                "Output": "Organism|PeripheralVenousBlood|Vancomycin|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "Vancomycin.Healy_1987_Figure2",
-                                "Color": "#000000"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ],
+        "GOFMergedPlots": [],
         "AllPlots": [
             {
                 "Project": "Vancomycin-Pediatrics",
@@ -881,7 +798,7 @@
                 },
                 {
                     "Id": 32,
-                    "Content": "Content/Concentration_time_profiles_children.md",
+                    "Content": "Content/Concentration_time_profiles_children_amikacin.md",
                     "Title": "2.2 Amikacin Concentration-Time profiles in Children"
                 },
                 {
