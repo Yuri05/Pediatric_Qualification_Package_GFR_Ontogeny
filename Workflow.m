@@ -9,11 +9,13 @@ tic
 if exist(fullfile(cd,'re_input'),'dir')>0 rmdir(fullfile(cd,'re_input'),'s'); end
 if exist(fullfile(cd,'report'),'dir')>0 rmdir(fullfile(cd,'report'),'s'); end
 
+addpath(genpath('C:\CompletSetup_SBSuite\QualificationFramework\Version_2.3\ReportingEngine_3.0.1.53'))
+
 % --------------------------------------------------------------
 % replace qualificationRunnerFolder and markdownJoinerFolder with your paths
-qualificationRunnerFolder = 'C:\Software\QualificationRunner_11.0.9999';
-markdownJoinerFolder = 'C:\Software\markdown-joiner_1.2.0.8';
-PKSimPortableFolder = 'C:\Software\PK-Sim_11.0.9999';
+qualificationRunnerFolder = 'C:\CompletSetup_SBSuite\QualificationFramework\Version_3.0_beta\QualificationRunner_11.0.128';
+markdownJoinerFolder = 'C:\CompletSetup_SBSuite\QualificationFramework\Version_2.3\markdown-joiner_1.2.0.8';
+PKSimPortableFolder = 'C:\CompletSetup_SBSuite\QualificationFramework\Version_3.0_beta\PK-Sim_11.0.140';
 
 % --------------------------------------------------------------
 % replace basisDir and qualificationPlanName with your paths
