@@ -5,15 +5,15 @@
 close all
 tic
 
-%if exist(fullfile(cd,'re_input'),'dir')>0 rmdir(fullfile(cd,'re_input'),'s'); end
 %if exist(fullfile(cd,'re_output'),'dir')>0 rmdir(fullfile(cd,'re_output'),'s'); end
-%if exist(fullfile(cd,'report'),'dir')>0 rmdir(fullfile(cd,'report'),'s'); end
+if exist(fullfile(cd,'re_input'),'dir')>0 rmdir(fullfile(cd,'re_input'),'s'); end
+if exist(fullfile(cd,'report'),'dir')>0 rmdir(fullfile(cd,'report'),'s'); end
 
 % --------------------------------------------------------------
 % replace qualificationRunnerFolder and markdownJoinerFolder with your paths
-qualificationRunnerFolder = 'C:\OSPQualification\QualificationRunner10.0.58';
-markdownJoinerFolder = 'C:\OSPQualification\markdown-joiner_1.2.0.8';
-PKSimPortableFolder = 'C:\OSPQualification\PK-Sim10.0.254';
+qualificationRunnerFolder = 'C:\Software\QualificationRunner_11.0.9999';
+markdownJoinerFolder = 'C:\Software\markdown-joiner_1.2.0.8';
+PKSimPortableFolder = 'C:\Software\PK-Sim_11.0.9999';
 
 % --------------------------------------------------------------
 % replace basisDir and qualificationPlanName with your paths
@@ -56,7 +56,7 @@ reportConfigurationPlan = 'report-configuration-plan.json';
 [WSettings, ConfigurationPlan, TaskList, ObservedDataSets] = initializeQualificationWorkflow(reportConfigurationPlan, REInput_path, REOutput_path);
 
 %OPTIONAL: set watermark. If set, it will appear in all generated plots
-%WSettings.Watermark = 'Preliminary';
+WSettings.Watermark = '';
 
 % run the Worklfow tasklist of ConfigurationPlan
 runQualificationWorkflow(WSettings, ConfigurationPlan, TaskList, ObservedDataSets);
