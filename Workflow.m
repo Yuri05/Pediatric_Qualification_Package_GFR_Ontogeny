@@ -49,7 +49,7 @@ ReportOutput_path=fullfile(basisDir,'report');
 
 % --------------------------------------------------------------
 % STEP #1: start qualification runner to generate inputs for the reporting engine
- startQualificationRunner(qualificationRunnerFolder, qualificationPlan, REInput_path, ['-p ' PKSimPortableFolder ]);
+startQualificationRunner(qualificationRunnerFolder, qualificationPlan, REInput_path, ['-p ' PKSimPortableFolder ]);
 
 % --------------------------------------------------------------
 % STEP #2: start reporting engine
