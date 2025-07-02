@@ -3,7 +3,7 @@
     "Projects": [
         {
             "Id": "Amikacin",
-            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Amikacin-Model/v2.0/Amikacin.json",
+            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Amikacin-Model/v2.0/Amikacin-Model.json",
             "BuildingBlocks": []
         },
         {
