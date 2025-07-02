@@ -1,14 +1,14 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/QualificationPlan/v2.3/schemas/OSP_Qualification_Plan_Schema.json",
+    "$schema": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/QualificationPlan/v3.3/schemas/OSP_Qualification_Plan_Schema.json",
     "Projects": [
         {
             "Id": "Amikacin",
-            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Amikacin-Model/v1.2/Amikacin.json",
+            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Amikacin-Model/v2.0/Amikacin.json",
             "BuildingBlocks": []
         },
         {
             "Id": "Vancomycin",
-            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Vancomycin-Model/v1.2/Vancomycin.json",
+            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Vancomycin-Model/v2.0/Vancomycin.json",
             "BuildingBlocks": []
         },
         {
@@ -37,7 +37,7 @@
     "ObservedDataSets": [
         {
             "Id": "PK-Parameter",
-            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Database-for-observed-data/v1.4/Pediatrics.csv",
+            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Database-for-observed-data/v1.7/Pediatrics.csv",
             "Type": "PKRatio"
         }
     ],
@@ -159,8 +159,10 @@
         "PKRatioPlots": [
             {
                 "Title": "Overall predictivity of the PBPK models. Open circles represent mean ratios of PBPK predicted clearance over observed clearance of all drugs in children 0.085 month to 16 years old. Blue dashed lines and red dotted lines represent the 1.5-fold and 2-fold error, respectively.",
-                "PKParameter": "CL",
-                "SectionId": 3,
+                "PKParameters": [
+                    "CL"
+                ],
+                "SectionReference": "pediatric-translation-qualification",
                 "Groups": [
                     {
                         "Color": "#000000",
@@ -446,8 +448,10 @@
             },
             {
                 "Title": "Overall predictivity of the amikacin PBPK model. Open circles represent mean ratios of PBPK predicted clearance over observed clearance of amikacin in children 0.16 months to 16 years old. Blue dashed lines and red dotted lines represent the 1.5-fold and 2-fold error, respectively.",
-                "PKParameter": "CL",
-                "SectionId": 31,
+                "PKParameters": [
+                    "CL"
+                ],
+                "SectionReference": "amikacin-pk-ratios",
                 "Groups": [
                     {
                         "Color": "#000000",
@@ -691,8 +695,10 @@
             },
             {
                 "Title": "Overall predictivity of the vancomycin PBPK model. Open circles represent mean ratios of PBPK predicted clearance over observed clearance of vancomycin in children 0.085 months to 7.58 years old. Blue dashed lines and red dotted lines represent the 1.5-fold and 2-fold error, respectively.",
-                "PKParameter": "CL",
-                "SectionId": 33,
+                "PKParameters": [
+                    "CL"
+                ],
+                "SectionReference": "vancomycin-pk-ratios",
                 "Groups": [
                     {
                         "Color": "#000000",
@@ -751,71 +757,71 @@
             {
                 "Project": "Vancomycin-Pediatrics",
                 "Simulation": "Schaad 1980 Fig 1c POP",
-                "SectionId": 34
+                "SectionReference": "vancomycin-ct-profiles"
             },
             {
                 "Project": "Vancomycin-Pediatrics",
                 "Simulation": "Schaad 1980 Fig 2a POP",
-                "SectionId": 34
+                "SectionReference": "vancomycin-ct-profiles"
             },
             {
                 "Project": "Vancomycin-Pediatrics",
                 "Simulation": "Schaad 1980 Fig 2b POP",
-                "SectionId": 34
+                "SectionReference": "vancomycin-ct-profiles"
             },
             {
                 "Project": "Vancomycin-Pediatrics",
                 "Simulation": "Schaad 1980 Fig 3a POP",
-                "SectionId": 34
+                "SectionReference": "vancomycin-ct-profiles"
             },
             {
                 "Project": "Vancomycin-Pediatrics",
                 "Simulation": "Schaad 1980 Fig 3b POP",
-                "SectionId": 34
+                "SectionReference": "vancomycin-ct-profiles"
             },
             {
                 "Project": "Vancomycin-Pediatrics",
                 "Simulation": "Schaad 1980 Fig 3c POP",
-                "SectionId": 34
+                "SectionReference": "vancomycin-ct-profiles"
             }
         ]
     },
     "Sections": [
         {
-            "Id": 2,
-            "Title": "1 Introduction to Pediatric Translation",
+            "Reference": "introduction",
+            "Title": "Introduction to Pediatric Translation",
             "Content": "Content/Introduction.md"
         },
         {
-            "Id": 3,
-            "Title": "2 Pediatric translation qualification",
+            "Reference": "pediatric-translation-qualification",
+            "Title": "Pediatric translation qualification",
             "Content": "Content/Translation.md",
             "Sections": [
                 {
-                    "Id": 31,
+                    "Reference": "amikacin-pk-ratios",
                     "Content": "Content/Amikacin_children.md",
-                    "Title": "2.1 Amikacin PK Ratio tables and Figures"
+                    "Title": "Amikacin PK Ratio tables and Figures"
                 },
                 {
-                    "Id": 32,
+                    "Reference": "amikacin-ct-profiles",
                     "Content": "Content/Concentration_time_profiles_children_amikacin.md",
-                    "Title": "2.2 Amikacin Concentration-Time profiles in Children"
+                    "Title": "Amikacin Concentration-Time profiles in Children"
                 },
                 {
-                    "Id": 33,
+                    "Reference": "vancomycin-pk-ratios",
                     "Content": "Content/Vancomycin_children.md",
-                    "Title": "2.3 Vancomycin PK Ratio tables and Figures"
+                    "Title": "Vancomycin PK Ratio tables and Figures"
                 },
                 {
-                    "Id": 34,
+                    "Reference": "vancomycin-ct-profiles",
                     "Content": "Content/Concentration_time_profiles_children.md",
-                    "Title": "2.4 Vancomycin Concentration-Time profiles in Children"
+                    "Title": "Vancomycin Concentration-Time profiles in Children"
                 }
             ]
         },
         {
-            "Id": 5,
-            "Title": "3 References",
+            "Reference": "main-references",
+            "Title": "References",
             "Content": "Content/References.md",
             "Sections": []
         }
